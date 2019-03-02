@@ -29,7 +29,7 @@ export default class YouTubeDebugger extends React.Component {
   handleResolution = () => {
     this.setState({
       settings: Object.assign({}, this.state.settings, {
-    bitrate: 12
+    video: Object.assign({}, this.state.video)
   })
     })
   }
