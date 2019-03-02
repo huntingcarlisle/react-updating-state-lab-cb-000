@@ -22,7 +22,7 @@ export default class YouTubeDebugger extends React.Component {
       settings: Object.assign({}, this.state.settings, {
     bitrate: 12
   })
-    }
+    })
   }
   
   
