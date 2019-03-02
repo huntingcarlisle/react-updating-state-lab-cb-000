@@ -6,17 +6,24 @@ export default class YouTubeDebugger extends React.Component {
   constructor() {
     super();
     this.state = {
-        
           errors: [], 
           user: null, 
           settings: { 
             bitrate: 8, 
             video: { 
-              resolution: '1080p' } } }
+              resolution: '1080p' 
+            }
+          }
+    }
   }
   
   
   render() {
-    return null;
+    return (
+      <div>
+        <button className='bitrate' onClick={this.handleBitrate}></button>
+        <button className='resolution' onClick={this.handleResolution}></button>
+      </div>
+      );
   }
 }
